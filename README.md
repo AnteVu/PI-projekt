@@ -12,7 +12,7 @@ Sav programski kod potrebno je verzionirati u glavnoj **master** grani i **obvez
 Nakon vaše prijave bit će vam dodijeljen mentor s kojim ćete tijekom semestra raditi na ovom projektu. A sada, vrijeme je da prijavite vaš projekt. Za prijavu vašeg projektnog prijedloga molimo vas koristite **predložak** koji je naveden u nastavku, a započnite tako da kliknete na *olovku* u desnom gornjem kutu ovoga dokumenta :) 
 
 # Naziv projekta
-(u redak iznad navedite kratki proizvoljni naziv projekta prikladan akademskoj zajednici, a ovaj tekst obrišite)
+Movieasy
 
 ## Projektni tim
 
@@ -23,15 +23,20 @@ Petar Kordić | pkordic@foi.hr | 0016143797 | pkordic
 Ante Vučić | avucic@foi.hr | 0055493113 | AnteVu
 
 ## Opis domene
-Umjesto ovih uputa opišite domenu ili problem koji pokrivate vašim  projektom. Domena može biti proizvoljna, ali obratite pozornost da sukladno ishodima učenja, domena omogući primjenu zahtijevanih koncepata kako je to navedeno u sljedećem poglavlju. Priložite odgovarajuće skice gdje je to prikladno.
+Rad u kinu je kompliciran bez prikladnog softvera. Ova aplikacija će omogućiti lakše upravljanje i lakšu rasporedbu sredstava zaposlenicima kina, ali i korisnicima.
 
 ## Specifikacija projekta
-Umjesto ovih uputa opišite zahtjeve za funkcionalnošću programskog proizvoda. Pobrojite osnovne funkcionalnosti i za svaku naznačite ime odgovornog člana tima. Opišite buduću arhitekturu programskog proizvoda. Obratite pozornost da bi arhitektura trebala biti višeslojna s odvojenom (dislociranom) bazom podatka. Također uzmite u obzir da bi svaki član tima treba biti odgovorana za otprilike 3 funkcionalnosti, te da bi opterećenje članova tima trebalo biti ujednačeno. Priložite odgovarajuće dijagrame i skice gdje je to prikladno. Funkcionalnosti sustava bobrojite u tablici ispod koristeći predložak koji slijedi:
-
 Oznaka | Naziv | Kratki opis | Odgovorni član tima
 ------ | ----- | ----------- | -------------------
-F01 | Login | Za pristup dnevniku potrebnba je autentikacija korisnika pomoću login funkcionalnosti. Korisnik se logira s podacima koji su mu dodijeljeni prilikom ... | Zlatko Stapić
-F02 | Pregled dnevnika | .... | ...
+F01 | Login |Za pristup aplikaciji korisnik se treba prijavit. | Tonino Hodak
+F02 | Katalog filmova | Korisnici mogu pretraživati filmove i odabrati koje žele pogledati | Ante Vučić
+F03 | Upravljanje katalogom filmova | Admin stavlja nove filmove u katalog i uređuje ponudu | Ante Vučić
+F04 | Rezervacija mjesta | Korisnik može rezervirat mjesto/a sjedenja u kinu i hranu | Tonino Hodak
+F05 | Upravljanje dvoranama | Admin može zauzimat dvorane po dogovoru(Ako neko poduzeće za neki događaj želi dvoranu) | Petar Kordić
+F06 | Upravljanje kinima | Admin može dodavati i uređivati ponude raznih kina | Ante Vučić
+F07 | Upravljanje resursima | Admin može vidjeti koliko resursa(kao što su hrana i piče) zahtjeva korisnici i može uređivati ponude | Tonino Hodak
+F08 | Statistika članova | Statistika članova prema raznim kriterijima | Petar Kordić
+F09 | Statistika filmova | Statistika filmova prema raznim kriterijima | Petar Kordić
 
 ## Tehnologije i oprema
-Umjesto ovih uputa jasno popišite sve tehnologije, alate i opremu koju ćete koristiti pri implementaciji vašeg rješenja. Ne zaboravite planirati korištenje tehnologija u aktivnostima kao što su projektni menadžment ili priprema dokumentacije. Tehnologije koje ćete koristiti bi trebale biti javno dostupne, a ako ih ne budemo obrađivali na vježbama u vašoj dokumentaciji ćete morati navesti način preuzimanja, instaliranja i korištenja onih tehnologija koje su neopbodne kako bi se vaš programski proizvod preveo i pokrenuo. Pazite da svi alati koje ćete koristiti moraju imati odgovarajuću licencu.
+GitHub, GitHub Classroom, Visual Paradigm CE, .NET(Visual Studio), Word, Microsoft SQL Server, Draw.io.
