@@ -36,7 +36,7 @@ F05 | Upravljanje dvoranama | Admin može upravljati dvoranama i rezervirati ih.
 F06 | Upravljanje kinima | Admin može dodavati i uređivati ponude raznih kina | Ante Vučić
 F07 | Upravljanje resursima | Admin može vidjeti koliko resursa(kao što su hrana i piče) zahtjeva korisnici i može uređivati ponude. Ukoliko zalihe padnu ispod prosječne tjedne potrošnje, adminu se prikazuje poruka s informacijama o artiklu kojeg je potrebno naručiti. | Tonino Hodak
 F08 | Statistika članova i filmova | Admin mora imati uvid u statističke podatke o filmovima i korisnicima, ovisno o odabranom filteru. | Petar Kordić
-F09 | Novosti o filmovima | Admin ima mogućnost kreirati novosti o filmovima te novosti se šalju korisnicima koji su odabrali prilikom registracije da žele primati obavijesti. | Petar Kordić
+F09 | Novosti o filmovima | Admin ima mogućnost kreirati novosti o filmovima te novosti se šalju korisnicima koji su odabrali prilikom registracije da žele primati novosti. | Petar Kordić
 
 ## Tehnologije i oprema
 GitHub, GitHub Classroom, Visual Paradigm CE, .NET(Visual Studio), Word, Microsoft SQL Server, Draw.io.
