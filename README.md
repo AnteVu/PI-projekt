@@ -1,4 +1,4 @@
-# Movieasy
+# Movieasy - Softver za zaposlenike kina
 
 
 ## Projektni tim
@@ -26,4 +26,4 @@ F08 | Statistika članova i filmova | Admin mora imati uvid u statističke podat
 F09 | Novosti o filmovima | Admin ima mogućnost kreirati novosti o filmovima te novosti se šalju korisnicima koji su odabrali prilikom registracije da žele primati novosti. | Petar Kordić
 
 ## Tehnologije i oprema
-GitHub, GitHub Classroom, Visual Paradigm CE, .NET(Visual Studio), Word, Microsoft SQL Server, Draw.io.
+GitHub, GitHub Classroom, Visual Paradigm CE, .NET(Visual Studio), Word, Microsoft SQL Server, Draw.io, MS Project.
