@@ -1,5 +1,5 @@
-# Naziv projekta
-Movieasy
+# Movieasy
+
 
 ## Projektni tim
 
