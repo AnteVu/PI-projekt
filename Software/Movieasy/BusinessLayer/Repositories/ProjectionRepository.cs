@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Repositories
 {
-    internal class ProjectionRepository : GenericRepository<Projection>
+    public class ProjectionRepository : GenericRepository<Projection>
     {
         public ProjectionRepository(AppDbContext dbContext) : base(dbContext)
         {

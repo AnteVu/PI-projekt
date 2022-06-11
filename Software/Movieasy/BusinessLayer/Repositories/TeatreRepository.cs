@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Repositories
 {
-    internal class TeatreRepository : GenericRepository<Teatre>
+    public class TeatreRepository : GenericRepository<Teatre>
     {
         public TeatreRepository(AppDbContext dbContext) : base(dbContext)   
         {
