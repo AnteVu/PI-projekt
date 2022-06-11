@@ -18,11 +18,11 @@ namespace BusinessLayer
         }
 
         public DbSet<Genre> Genres { get; set; }
-        public DbSet<Hall> Hall { get; set; }
-        public DbSet<Movie> Movie { get; set; }
-        public DbSet<Projection> Projection { get; set; }
-        public DbSet<Reservation> Reservation { get; set; }
-        public DbSet<Teatre> Teatre { get; set; }
+        public DbSet<Hall> Halls { get; set; }
+        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Projection> Projections { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<Teatre> Teatres { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

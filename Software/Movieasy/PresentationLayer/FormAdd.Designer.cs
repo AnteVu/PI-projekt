@@ -35,13 +35,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnHelp = new System.Windows.Forms.Button();
+            this.showDatePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -105,13 +105,6 @@
             this.textBox1.Size = new System.Drawing.Size(121, 20);
             this.textBox1.TabIndex = 6;
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(140, 162);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 20);
-            this.textBox2.TabIndex = 7;
-            // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(140, 298);
@@ -164,18 +157,25 @@
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
+            // showDatePicker
+            // 
+            this.showDatePicker.Location = new System.Drawing.Point(140, 161);
+            this.showDatePicker.Name = "showDatePicker";
+            this.showDatePicker.Size = new System.Drawing.Size(121, 20);
+            this.showDatePicker.TabIndex = 17;
+            // 
             // FormAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 648);
+            this.Controls.Add(this.showDatePicker);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -199,12 +199,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.DateTimePicker showDatePicker;
     }
 }

@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Services;
+﻿using BusinessLayer;
+using BusinessLayer.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace PresentationLayer
         private readonly UnitOfWork _unitOfWork;
         public MovieCatalog()
         {
+            _unitOfWork = new UnitOfWork(new AppDbContext());
             InitializeComponent();
         }
 
@@ -27,7 +29,7 @@ namespace PresentationLayer
         private void RefreshForm()
         {
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = _unitOfWork;
+            dataGridView1.DataSource = _unitOfWork.Movies;
         }
 
         private void btnDetalj_Click(object sender, EventArgs e)

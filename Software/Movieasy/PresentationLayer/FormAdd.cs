@@ -29,7 +29,8 @@ namespace PresentationLayer
             Genre genre = comboBox1.SelectedItem as Genre;
             int duration = int.Parse(textBox4.Text);
             string description = richTextBox1.Text;
-            Movie movie = new Movie(name,genre,duration,description);
+            DateTime showDate = this.showDatePicker.Value;
+            Movie movie = new Movie(name,genre,duration,description, showDate);
             _unitOfWork.Movies.Add(movie);
             _unitOfWork.Complete();
             Close();

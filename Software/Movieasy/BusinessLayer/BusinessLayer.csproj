@@ -52,9 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDbContext.cs" />
-    <Compile Include="Migrations\202206110023297_test.cs" />
-    <Compile Include="Migrations\202206110023297_test.designer.cs">
-      <DependentUpon>202206110023297_test.cs</DependentUpon>
+    <Compile Include="Migrations\202206112018368_test.cs" />
+    <Compile Include="Migrations\202206112018368_test.designer.cs">
+      <DependentUpon>202206112018368_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,7 +71,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
       <Project>{03224d1f-f461-4e92-8fcf-cca8ccc2daf9}</Project>
@@ -79,8 +78,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206110023297_test.resx">
-      <DependentUpon>202206110023297_test.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206112018368_test.resx">
+      <DependentUpon>202206112018368_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
