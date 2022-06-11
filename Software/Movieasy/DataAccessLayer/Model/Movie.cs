@@ -13,7 +13,17 @@ namespace DataAccessLayer.Model
         public int Duration { get; set; }
         public DateTime LastShowed { get; set; }
         public int NumOfShowing { get; set; }
+        public string Description { get; set; }
 
         public Genre Genre { get; set; }
+
+        public Movie(string name,Genre genre, int duration, string description)
+        {
+           
+            Name = name;
+            Genre = genre;
+            Duration = duration;
+            Description = description;
+        }
     }
 }

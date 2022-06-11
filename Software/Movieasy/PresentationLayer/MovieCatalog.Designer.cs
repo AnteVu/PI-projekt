@@ -32,10 +32,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnRez = new System.Windows.Forms.Button();
             this.btnBuy = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnAddMovie = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnDetalj = new System.Windows.Forms.Button();
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.btnAddGenre = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +60,7 @@
             // 
             // btnRez
             // 
-            this.btnRez.Location = new System.Drawing.Point(32, 323);
+            this.btnRez.Location = new System.Drawing.Point(205, 323);
             this.btnRez.Name = "btnRez";
             this.btnRez.Size = new System.Drawing.Size(84, 45);
             this.btnRez.TabIndex = 2;
@@ -67,21 +69,22 @@
             // 
             // btnBuy
             // 
-            this.btnBuy.Location = new System.Drawing.Point(138, 323);
+            this.btnBuy.Location = new System.Drawing.Point(295, 323);
             this.btnBuy.Name = "btnBuy";
             this.btnBuy.Size = new System.Drawing.Size(92, 45);
             this.btnBuy.TabIndex = 3;
             this.btnBuy.Text = "Kupi kartu";
             this.btnBuy.UseVisualStyleBackColor = true;
             // 
-            // btnAdd
+            // btnAddMovie
             // 
-            this.btnAdd.Location = new System.Drawing.Point(254, 18);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(101, 42);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "Dodaj film";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAddMovie.Location = new System.Drawing.Point(254, 18);
+            this.btnAddMovie.Name = "btnAddMovie";
+            this.btnAddMovie.Size = new System.Drawing.Size(101, 42);
+            this.btnAddMovie.TabIndex = 4;
+            this.btnAddMovie.Text = "Dodaj film";
+            this.btnAddMovie.UseVisualStyleBackColor = true;
+            this.btnAddMovie.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -100,26 +103,48 @@
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Obriši film";
             this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnDetalj
             // 
-            this.btnDetalj.Location = new System.Drawing.Point(450, 323);
+            this.btnDetalj.Location = new System.Drawing.Point(460, 323);
             this.btnDetalj.Name = "btnDetalj";
             this.btnDetalj.Size = new System.Drawing.Size(100, 45);
             this.btnDetalj.TabIndex = 7;
             this.btnDetalj.Text = "Detalji filma";
             this.btnDetalj.UseVisualStyleBackColor = true;
+            this.btnDetalj.Click += new System.EventHandler(this.btnDetalj_Click);
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Location = new System.Drawing.Point(12, 323);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(88, 45);
+            this.btnHelp.TabIndex = 8;
+            this.btnHelp.Text = "Pomoć?";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // btnAddGenre
+            // 
+            this.btnAddGenre.Location = new System.Drawing.Point(151, 18);
+            this.btnAddGenre.Name = "btnAddGenre";
+            this.btnAddGenre.Size = new System.Drawing.Size(97, 42);
+            this.btnAddGenre.TabIndex = 9;
+            this.btnAddGenre.Text = "Dodaj Žanr";
+            this.btnAddGenre.UseVisualStyleBackColor = true;
+            this.btnAddGenre.Click += new System.EventHandler(this.btnAddGenre_Click);
             // 
             // MovieCatalog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 443);
+            this.ClientSize = new System.Drawing.Size(611, 408);
+            this.Controls.Add(this.btnAddGenre);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnDetalj);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnAddMovie);
             this.Controls.Add(this.btnBuy);
             this.Controls.Add(this.btnRez);
             this.Controls.Add(this.label1);
@@ -139,9 +164,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRez;
         private System.Windows.Forms.Button btnBuy;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnAddMovie;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnDetalj;
+        private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Button btnAddGenre;
     }
 }
