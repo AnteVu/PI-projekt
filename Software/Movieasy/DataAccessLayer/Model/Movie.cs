@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,21 +12,43 @@ namespace DataAccessLayer.Model
         public int Id { get; set; }
         public string Name { get; set; }
         public int Duration { get; set; }
-        public DateTime ShowDate { get; set; }
-        public DateTime LastShowed { get; set; }
-        public int NumOfShowing { get; set; }
         public string Description { get; set; }
 
         public Genre Genre { get; set; }
+        public ICollection<Projection> Projections { get; set; }
 
-        public Movie(string name,Genre genre, int duration, string description,DateTime showDate)
+        [NotMapped]
+        public int NumberOfProjections
         {
-           
+            get
+            {
+                return Projections.Count;
+            }
+        }
+
+        [NotMapped]
+        public DateTime LastShowed
+        {
+            get
+            {
+                List<Projection> projections = Projections.Where(x => x.TimeTo < DateTime.Now).ToList();
+
+                return projections.Max(x => x.TimeTo);
+            }
+        }
+
+        public Movie()
+        {
+
+        }
+
+        public Movie(string name, int duration, string description, Genre genre)
+        {
+
             Name = name;
-            Genre = genre;
             Duration = duration;
+            Genre = genre;
             Description = description;
-            ShowDate = showDate;
         }
     }
 }

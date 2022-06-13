@@ -117,28 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="MovieName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="TeatreName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ReservationsLeft.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="projectionBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>169, 17</value>
-  </metadata>
-  <metadata name="movieasyDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="projectionTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>355, 17</value>
-  </metadata>
-  <metadata name="projectionBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>535, 17</value>
-  </metadata>
-  <metadata name="projectionBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>727, 17</value>
-  </metadata>
+  <data name="Target" xml:space="preserve">
+    <value>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</value>
+  </data>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
+  </data>
 </root>

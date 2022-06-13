@@ -52,9 +52,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDbContext.cs" />
-    <Compile Include="Migrations\202206112018368_test.cs" />
-    <Compile Include="Migrations\202206112018368_test.designer.cs">
-      <DependentUpon>202206112018368_test.cs</DependentUpon>
+    <Compile Include="Migrations\202206122123516_test1.cs" />
+    <Compile Include="Migrations\202206122123516_test1.designer.cs">
+      <DependentUpon>202206122123516_test1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206122219582_test.cs" />
+    <Compile Include="Migrations\202206122219582_test.designer.cs">
+      <DependentUpon>202206122219582_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206130039281_test2.cs" />
+    <Compile Include="Migrations\202206130039281_test2.designer.cs">
+      <DependentUpon>202206130039281_test2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,8 +86,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206112018368_test.resx">
-      <DependentUpon>202206112018368_test.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206122123516_test1.resx">
+      <DependentUpon>202206122123516_test1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206122219582_test.resx">
+      <DependentUpon>202206122219582_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206130039281_test2.resx">
+      <DependentUpon>202206130039281_test2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

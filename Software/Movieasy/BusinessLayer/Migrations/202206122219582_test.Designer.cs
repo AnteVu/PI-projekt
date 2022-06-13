@@ -13,7 +13,7 @@ namespace BusinessLayer.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202206112018368_test"; }
+            get { return "202206122219582_test"; }
         }
         
         string IMigrationMetadata.Source

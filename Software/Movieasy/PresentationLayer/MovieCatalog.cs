@@ -23,27 +23,29 @@ namespace PresentationLayer
 
         private void MovieCatalog_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'movieasyDataSet1.Projection' table. You can move, or remove it, as needed.
+            this.projectionTableAdapter.Fill(this.movieasyDataSet1.Projection);
             RefreshForm();
         }
 
         private void RefreshForm()
         {
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = _unitOfWork.Movies;
+            dataGridView1.DataSource = _unitOfWork.Projections.GetAll();
         }
 
         private void btnDetalj_Click(object sender, EventArgs e)
         {
             FormDetails formDetails = new FormDetails();
-            this.Hide();
+            Hide();
             formDetails.ShowDialog();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnAddMovie_Click(object sender, EventArgs e)
         {
-            FormAdd formAdd = new FormAdd();
-            this.Hide();
-            formAdd.ShowDialog();
+            FormAddMovie formAddMovie = new FormAddMovie();
+            Hide();
+            formAddMovie.ShowDialog();
         }
         private void btnAddGenre_Click(object sender, EventArgs e)
         {
@@ -67,6 +69,20 @@ namespace PresentationLayer
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
+        private void btnTeatre_Click(object sender, EventArgs e)
+        {
+            FormTeatre formTeatre = new FormTeatre();
+            Hide();
+            formTeatre.ShowDialog();
+            Show();
+        }
+
+        private void buttonAddProjection_Click(object sender, EventArgs e)
+        {
+            FormAddProjection formAddProjection = new FormAddProjection();
+            Hide();
+            formAddProjection.ShowDialog();
+        }
     }
     
 }

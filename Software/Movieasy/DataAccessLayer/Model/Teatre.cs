@@ -15,6 +15,25 @@ namespace DataAccessLayer.Model
         public string Phone { get; set; }
         public string EMail { get; set; }
 
-        public ICollection<Hall> Halls { get; set; }    
+        public ICollection<Hall> Halls { get; set; }
+        public ICollection<Projection> Projections { get; set; }
+
+
+        public Teatre() 
+        {
+            Halls = new List<Hall>();
+            Projections = new List<Projection>();
+        }
+
+        public Teatre(string name, string address, string oib, string phone, string email)
+        {
+            Name = name;
+            Address = address;
+            OIB = oib;
+            Phone = phone;
+            EMail = email;
+            Halls = new List<Hall>();
+            Projections = new List<Projection>();
+        }
     }
 }

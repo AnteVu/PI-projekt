@@ -13,6 +13,10 @@ namespace DataAccessLayer.Model
 
         public ICollection<Movie> Movies { get; set; }
 
+        public Genre()
+        {
+
+        }
         public Genre(string name)
         {
             Name = name;

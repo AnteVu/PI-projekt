@@ -57,11 +57,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAdd.cs">
+    <Compile Include="FormAddProjection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAdd.Designer.cs">
-      <DependentUpon>FormAdd.cs</DependentUpon>
+    <Compile Include="FormAddProjection.Designer.cs">
+      <DependentUpon>FormAddProjection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddMovie.Designer.cs">
+      <DependentUpon>FormAddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddTeatre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTeatre.Designer.cs">
+      <DependentUpon>FormAddTeatre.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDetails.cs">
       <SubType>Form</SubType>
@@ -81,11 +93,33 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMovieList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMovieList.Designer.cs">
+      <DependentUpon>FormMovieList.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTeatre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeatre.Designer.cs">
+      <DependentUpon>FormTeatre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieasyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieasyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MovieasyDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieasyDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="MovieCatalog.cs">
       <SubType>Form</SubType>
@@ -95,8 +129,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormAdd.resx">
-      <DependentUpon>FormAdd.cs</DependentUpon>
+    <EmbeddedResource Include="FormAddProjection.resx">
+      <DependentUpon>FormAddProjection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddMovie.resx">
+      <DependentUpon>FormAddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTeatre.resx">
+      <DependentUpon>FormAddTeatre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDetails.resx">
       <DependentUpon>FormDetails.cs</DependentUpon>
@@ -107,8 +147,14 @@
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMovieList.resx">
+      <DependentUpon>FormMovieList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeatre.resx">
+      <DependentUpon>FormTeatre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovieCatalog.resx">
       <DependentUpon>MovieCatalog.cs</DependentUpon>
@@ -122,7 +168,30 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="MovieasyDataSet.xsc">
+      <DependentUpon>MovieasyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MovieasyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovieasyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MovieasyDataSet.xss">
+      <DependentUpon>MovieasyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MovieasyDataSet1.xsc">
+      <DependentUpon>MovieasyDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MovieasyDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovieasyDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MovieasyDataSet1.xss">
+      <DependentUpon>MovieasyDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DataAccessLayer.Model.Projection.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -12,5 +12,14 @@ namespace DataAccessLayer.Model
         public int Capacity { get; set; }
 
         public Teatre Teatre { get; set; }
+
+        public Hall()
+        {
+        }
+
+        public Hall(int capacity)
+        {
+            Capacity = capacity;
+        }
     }
 }

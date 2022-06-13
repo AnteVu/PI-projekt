@@ -13,10 +13,11 @@ using DataAccessLayer.Model;
 
 namespace PresentationLayer
 {
-    public partial class FormAdd : Form
+    public partial class FormAddMovie : Form
     {
         private readonly UnitOfWork _unitOfWork;
-        public FormAdd()
+
+        public FormAddMovie()
         {
             _unitOfWork = new UnitOfWork(new AppDbContext());
             InitializeComponent();
@@ -26,13 +27,15 @@ namespace PresentationLayer
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string name = textBox1.Text;
-            Genre genre = comboBox1.SelectedItem as Genre;
+            Genre genre = comboBoxGenres.SelectedItem as Genre;
             int duration = int.Parse(textBox4.Text);
             string description = richTextBox1.Text;
-            DateTime showDate = this.showDatePicker.Value;
-            Movie movie = new Movie(name,genre,duration,description, showDate);
+
+            Movie movie = new Movie(name, duration, description, genre);
+
             _unitOfWork.Movies.Add(movie);
             _unitOfWork.Complete();
+
             Close();
         }
         private void btnHelp_Click(object sender, EventArgs e)
@@ -47,6 +50,24 @@ namespace PresentationLayer
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void FormAdd_Load(object sender, EventArgs e)
+        {
+            RefreshForm();
+        }
+
+        private void RefreshForm()
+        {
+            List<Genre> teatres = _unitOfWork.Genres.GetAll();
+
+            comboBoxGenres.DataSource = teatres;
+            comboBoxGenres.DisplayMember = "Name";
         }
     }
 }
