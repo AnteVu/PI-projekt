@@ -85,5 +85,7 @@ namespace PresentationLayer
             comboBox2.DataSource = selectedTeatre.Halls;
             comboBox2.DisplayMember = "Id";
         }
+
+       
     }
 }

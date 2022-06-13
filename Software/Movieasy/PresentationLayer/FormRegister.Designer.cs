@@ -146,11 +146,13 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(172, 9);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(179, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 13);
+            this.label7.Size = new System.Drawing.Size(97, 18);
             this.label7.TabIndex = 12;
             this.label7.Text = "Registracija";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // button1
             // 
@@ -158,7 +160,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 35);
             this.button1.TabIndex = 13;
-            this.button1.Text = "Register";
+            this.button1.Text = "Registracija";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -167,7 +169,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 35);
             this.button2.TabIndex = 14;
-            this.button2.Text = "Cancel";
+            this.button2.Text = "Odustani";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -211,7 +213,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Name = "FormRegister";
-            this.Text = "FormRegister";
+            this.Text = "Registracija";
             this.ResumeLayout(false);
             this.PerformLayout();
 

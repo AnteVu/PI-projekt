@@ -51,9 +51,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(195, 19);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(187, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
+            this.label1.Size = new System.Drawing.Size(145, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Upravljanje kinima";
             // 
@@ -84,13 +85,13 @@
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Naslov";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             // 
             // addressDataGridViewTextBoxColumn
             // 
             this.addressDataGridViewTextBoxColumn.DataPropertyName = "Address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "Address";
+            this.addressDataGridViewTextBoxColumn.HeaderText = "Adresa";
             this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
             // 
             // oIBDataGridViewTextBoxColumn
@@ -102,13 +103,13 @@
             // phoneDataGridViewTextBoxColumn
             // 
             this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "Telefonski broj";
             this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
             // 
             // eMailDataGridViewTextBoxColumn
             // 
             this.eMailDataGridViewTextBoxColumn.DataPropertyName = "EMail";
-            this.eMailDataGridViewTextBoxColumn.HeaderText = "EMail";
+            this.eMailDataGridViewTextBoxColumn.HeaderText = "E - Mail";
             this.eMailDataGridViewTextBoxColumn.Name = "eMailDataGridViewTextBoxColumn";
             // 
             // teatreBindingSource
@@ -185,12 +186,12 @@
         private MovieasyDataSet movieasyDataSet;
         private System.Windows.Forms.BindingSource teatreBindingSource;
         private MovieasyDataSetTableAdapters.TeatreTableAdapter teatreTableAdapter;
+        private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn oIBDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn eMailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnHelp;
     }
 }

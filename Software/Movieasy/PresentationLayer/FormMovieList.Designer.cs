@@ -112,7 +112,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(28, 502);
+            this.btnBack.Location = new System.Drawing.Point(511, 552);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 42);
             this.btnBack.TabIndex = 1;
@@ -125,9 +125,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(25, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 13);
+            this.label1.Size = new System.Drawing.Size(116, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Pregled popisa filmova";
+            this.label1.Text = "Pregled popisa filmova:";
             // 
             // movieasyDataSet
             // 
@@ -148,9 +148,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(25, 321);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(202, 13);
+            this.label2.Size = new System.Drawing.Size(242, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Filmovi zadnje prikazani prije godinu dana";
+            this.label2.Text = "Filmovi zadnje prikazani prije više od godinu dana:";
             // 
             // movieBindingSource2
             // 
@@ -188,7 +188,7 @@
             // 
             // btnHelp
             // 
-            this.btnHelp.Location = new System.Drawing.Point(496, 552);
+            this.btnHelp.Location = new System.Drawing.Point(12, 552);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(75, 44);
             this.btnHelp.TabIndex = 6;

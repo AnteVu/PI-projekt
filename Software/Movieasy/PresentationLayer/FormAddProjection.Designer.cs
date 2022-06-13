@@ -49,9 +49,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(169, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(138, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.Size = new System.Drawing.Size(130, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dodaj projekciju";
             // 
@@ -66,7 +67,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(34, 365);
+            this.btnCancel.Location = new System.Drawing.Point(62, 343);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(89, 43);
             this.btnCancel.TabIndex = 13;
@@ -76,7 +77,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(268, 365);
+            this.btnAdd.Location = new System.Drawing.Point(233, 343);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(88, 43);
             this.btnAdd.TabIndex = 14;
@@ -87,7 +88,7 @@
             // btnHelp
             // 
             this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnHelp.Location = new System.Drawing.Point(12, 513);
+            this.btnHelp.Location = new System.Drawing.Point(12, 446);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(87, 45);
             this.btnHelp.TabIndex = 16;
@@ -188,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 572);
+            this.ClientSize = new System.Drawing.Size(410, 503);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.timePickerTo);
             this.Controls.Add(this.timePickerFrom);
@@ -206,7 +207,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormAddProjection";
-            this.Text = "Dodaj projekciju";
+            this.Text = "Dodavanje projekcije";
             this.Load += new System.EventHandler(this.FormAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
