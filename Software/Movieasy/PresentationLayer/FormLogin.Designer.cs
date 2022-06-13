@@ -100,7 +100,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnLogin);
             this.Name = "FormLogin";
-            this.Text = "Form1";
+            this.Text = "Prijava";
             this.ResumeLayout(false);
             this.PerformLayout();
 

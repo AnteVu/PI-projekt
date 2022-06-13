@@ -51,6 +51,7 @@
             this.btnPregledFilmova = new System.Windows.Forms.Button();
             this.projectionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dateTimePickerFilter = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieasyDataSet1)).BeginInit();
@@ -71,7 +72,7 @@
             this.dataGridView1.DataSource = this.projectionBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(16, 114);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(545, 251);
+            this.dataGridView1.Size = new System.Drawing.Size(611, 251);
             this.dataGridView1.TabIndex = 0;
             // 
             // MovieName
@@ -128,7 +129,7 @@
             // 
             // btnAddMovie
             // 
-            this.btnAddMovie.Location = new System.Drawing.Point(254, 18);
+            this.btnAddMovie.Location = new System.Drawing.Point(322, 57);
             this.btnAddMovie.Name = "btnAddMovie";
             this.btnAddMovie.Size = new System.Drawing.Size(101, 42);
             this.btnAddMovie.TabIndex = 4;
@@ -138,7 +139,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(361, 18);
+            this.btnUpdate.Location = new System.Drawing.Point(429, 57);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(94, 42);
             this.btnUpdate.TabIndex = 5;
@@ -147,7 +148,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(461, 18);
+            this.btnDelete.Location = new System.Drawing.Point(529, 57);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(99, 42);
             this.btnDelete.TabIndex = 6;
@@ -156,7 +157,7 @@
             // 
             // btnDetalj
             // 
-            this.btnDetalj.Location = new System.Drawing.Point(461, 371);
+            this.btnDetalj.Location = new System.Drawing.Point(529, 371);
             this.btnDetalj.Name = "btnDetalj";
             this.btnDetalj.Size = new System.Drawing.Size(100, 45);
             this.btnDetalj.TabIndex = 7;
@@ -166,7 +167,7 @@
             // 
             // btnHelp
             // 
-            this.btnHelp.Location = new System.Drawing.Point(12, 431);
+            this.btnHelp.Location = new System.Drawing.Point(12, 464);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Size = new System.Drawing.Size(88, 45);
             this.btnHelp.TabIndex = 8;
@@ -176,7 +177,7 @@
             // 
             // btnAddGenre
             // 
-            this.btnAddGenre.Location = new System.Drawing.Point(151, 18);
+            this.btnAddGenre.Location = new System.Drawing.Point(219, 57);
             this.btnAddGenre.Name = "btnAddGenre";
             this.btnAddGenre.Size = new System.Drawing.Size(97, 42);
             this.btnAddGenre.TabIndex = 9;
@@ -205,7 +206,7 @@
             // 
             // buttonAddProjection
             // 
-            this.buttonAddProjection.Location = new System.Drawing.Point(633, 100);
+            this.buttonAddProjection.Location = new System.Drawing.Point(633, 114);
             this.buttonAddProjection.Name = "buttonAddProjection";
             this.buttonAddProjection.Size = new System.Drawing.Size(101, 42);
             this.buttonAddProjection.TabIndex = 11;
@@ -215,7 +216,7 @@
             // 
             // btnPregledFilmova
             // 
-            this.btnPregledFilmova.Location = new System.Drawing.Point(633, 175);
+            this.btnPregledFilmova.Location = new System.Drawing.Point(633, 162);
             this.btnPregledFilmova.Name = "btnPregledFilmova";
             this.btnPregledFilmova.Size = new System.Drawing.Size(101, 40);
             this.btnPregledFilmova.TabIndex = 12;
@@ -235,11 +236,21 @@
             this.dateTimePickerFilter.TabIndex = 14;
             this.dateTimePickerFilter.ValueChanged += new System.EventHandler(this.dateTimePickerFilter_ValueChanged);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Pretraživanje:";
+            // 
             // MovieCatalog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 488);
+            this.ClientSize = new System.Drawing.Size(746, 521);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePickerFilter);
             this.Controls.Add(this.btnPregledFilmova);
             this.Controls.Add(this.buttonAddProjection);
@@ -289,5 +300,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TeatreName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ReservationsLeft;
         private System.Windows.Forms.DateTimePicker dateTimePickerFilter;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -103,7 +103,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "FormGenre";
-            this.Text = "FormGenre";
+            this.Text = "Dodavanje žanra";
             this.ResumeLayout(false);
             this.PerformLayout();
 

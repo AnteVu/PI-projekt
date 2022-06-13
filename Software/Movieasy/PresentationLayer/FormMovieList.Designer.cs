@@ -44,9 +44,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.movieBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.movieBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastShowedDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.movieBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieasyDataSet)).BeginInit();
@@ -111,9 +112,9 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(28, 557);
+            this.btnBack.Location = new System.Drawing.Point(28, 502);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.Size = new System.Drawing.Size(75, 42);
             this.btnBack.TabIndex = 1;
             this.btnBack.Text = "Nazad";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -122,7 +123,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 9);
+            this.label1.Location = new System.Drawing.Point(25, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 13);
             this.label1.TabIndex = 2;
@@ -145,7 +146,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 301);
+            this.label2.Location = new System.Drawing.Point(25, 321);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 13);
             this.label2.TabIndex = 4;
@@ -163,40 +164,51 @@
             this.nameDataGridViewTextBoxColumn1,
             this.lastShowedDataGridViewTextBoxColumn1});
             this.dataGridView2.DataSource = this.movieBindingSource3;
-            this.dataGridView2.Location = new System.Drawing.Point(28, 358);
+            this.dataGridView2.Location = new System.Drawing.Point(28, 337);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView2.Size = new System.Drawing.Size(237, 150);
             this.dataGridView2.TabIndex = 5;
-            // 
-            // movieBindingSource3
-            // 
-            this.movieBindingSource3.DataSource = typeof(DataAccessLayer.Model.Movie);
             // 
             // nameDataGridViewTextBoxColumn1
             // 
             this.nameDataGridViewTextBoxColumn1.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn1.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn1.HeaderText = "Naslov";
             this.nameDataGridViewTextBoxColumn1.Name = "nameDataGridViewTextBoxColumn1";
             // 
             // lastShowedDataGridViewTextBoxColumn1
             // 
             this.lastShowedDataGridViewTextBoxColumn1.DataPropertyName = "LastShowed";
-            this.lastShowedDataGridViewTextBoxColumn1.HeaderText = "LastShowed";
+            this.lastShowedDataGridViewTextBoxColumn1.HeaderText = "Zadnje prikazano";
             this.lastShowedDataGridViewTextBoxColumn1.Name = "lastShowedDataGridViewTextBoxColumn1";
             this.lastShowedDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // movieBindingSource3
+            // 
+            this.movieBindingSource3.DataSource = typeof(DataAccessLayer.Model.Movie);
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Location = new System.Drawing.Point(496, 552);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(75, 44);
+            this.btnHelp.TabIndex = 6;
+            this.btnHelp.Text = "Pomoć?";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // FormMovieList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 608);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormMovieList";
-            this.Text = "FormMovieList";
+            this.Text = "Popis Filmova";
             this.Load += new System.EventHandler(this.FormMovieList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.movieBindingSource1)).EndInit();
@@ -228,8 +240,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.BindingSource movieBindingSource2;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.BindingSource movieBindingSource3;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastShowedDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.BindingSource movieBindingSource3;
+        private System.Windows.Forms.Button btnHelp;
     }
 }

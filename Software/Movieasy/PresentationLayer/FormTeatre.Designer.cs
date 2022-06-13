@@ -31,20 +31,21 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewTeatres = new System.Windows.Forms.DataGridView();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.movieasyDataSet = new PresentationLayer.MovieasyDataSet();
-            this.teatreBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.teatreTableAdapter = new PresentationLayer.MovieasyDataSetTableAdapters.TeatreTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.oIBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.teatreBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.movieasyDataSet = new PresentationLayer.MovieasyDataSet();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.teatreTableAdapter = new PresentationLayer.MovieasyDataSetTableAdapters.TeatreTableAdapter();
+            this.btnHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeatres)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movieasyDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teatreBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movieasyDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -72,40 +73,6 @@
             this.dataGridViewTeatres.Name = "dataGridViewTeatres";
             this.dataGridViewTeatres.Size = new System.Drawing.Size(463, 210);
             this.dataGridViewTeatres.TabIndex = 1;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(412, 303);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Dodaj kino";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(24, 303);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "Odustani";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // movieasyDataSet
-            // 
-            this.movieasyDataSet.DataSetName = "MovieasyDataSet";
-            this.movieasyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // teatreBindingSource
-            // 
-            this.teatreBindingSource.DataMember = "Teatre";
-            this.teatreBindingSource.DataSource = this.movieasyDataSet;
-            // 
-            // teatreTableAdapter
-            // 
-            this.teatreTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -144,21 +111,66 @@
             this.eMailDataGridViewTextBoxColumn.HeaderText = "EMail";
             this.eMailDataGridViewTextBoxColumn.Name = "eMailDataGridViewTextBoxColumn";
             // 
+            // teatreBindingSource
+            // 
+            this.teatreBindingSource.DataMember = "Teatre";
+            this.teatreBindingSource.DataSource = this.movieasyDataSet;
+            // 
+            // movieasyDataSet
+            // 
+            this.movieasyDataSet.DataSetName = "MovieasyDataSet";
+            this.movieasyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(412, 267);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 43);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "Dodaj kino";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(24, 267);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 43);
+            this.btnCancel.TabIndex = 3;
+            this.btnCancel.Text = "Odustani";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // teatreTableAdapter
+            // 
+            this.teatreTableAdapter.ClearBeforeFill = true;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Location = new System.Drawing.Point(12, 350);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(75, 41);
+            this.btnHelp.TabIndex = 4;
+            this.btnHelp.Text = "Pomoć?";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // FormTeatre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(525, 414);
+            this.ClientSize = new System.Drawing.Size(525, 403);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridViewTeatres);
             this.Controls.Add(this.label1);
             this.Name = "FormTeatre";
-            this.Text = "FormTeatre";
+            this.Text = "Upravljanje kinima";
             this.Load += new System.EventHandler(this.FormTeatre_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeatres)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.movieasyDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teatreBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.movieasyDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +191,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn oIBDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn eMailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnHelp;
     }
 }

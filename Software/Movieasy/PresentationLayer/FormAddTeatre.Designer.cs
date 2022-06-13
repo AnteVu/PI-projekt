@@ -45,6 +45,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxCapacity = new System.Windows.Forms.TextBox();
             this.dataGridViewHalls = new System.Windows.Forms.DataGridView();
+            this.btnHelp = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHalls)).BeginInit();
             this.SuspendLayout();
@@ -131,9 +132,9 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(106, 271);
+            this.btnAdd.Location = new System.Drawing.Point(106, 256);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(75, 38);
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Dodaj";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -141,9 +142,9 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(18, 271);
+            this.btnCancel.Location = new System.Drawing.Point(18, 256);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 38);
             this.btnCancel.TabIndex = 11;
             this.btnCancel.Text = "Odustani";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -192,14 +193,25 @@
             this.dataGridViewHalls.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewHalls.Location = new System.Drawing.Point(199, 135);
             this.dataGridViewHalls.Name = "dataGridViewHalls";
-            this.dataGridViewHalls.Size = new System.Drawing.Size(240, 150);
+            this.dataGridViewHalls.Size = new System.Drawing.Size(240, 159);
             this.dataGridViewHalls.TabIndex = 13;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Location = new System.Drawing.Point(8, 363);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(75, 39);
+            this.btnHelp.TabIndex = 14;
+            this.btnHelp.Text = "Pomoć?";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // FormAddTeatre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 372);
+            this.ClientSize = new System.Drawing.Size(475, 414);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.dataGridViewHalls);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCancel);
@@ -244,5 +256,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxCapacity;
         private System.Windows.Forms.DataGridView dataGridViewHalls;
+        private System.Windows.Forms.Button btnHelp;
     }
 }
