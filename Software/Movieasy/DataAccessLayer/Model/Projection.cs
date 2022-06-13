@@ -45,12 +45,17 @@ namespace DataAccessLayer.Model
 
         public ICollection<Reservation> Reservations { get; set; }
 
-        public Projection(Movie movie, Teatre teatre, Hall hall)
+        public Projection()
+        {
+
+        }
+        public Projection(DateTime timeFrom, DateTime timeTo, Movie movie, Teatre teatre, Hall hall)
         {
             Movie = movie;
             Teatre = teatre;
             Hall = hall;
-
+            TimeFrom = timeFrom;
+            TimeTo = timeTo;
         }
     }
 }

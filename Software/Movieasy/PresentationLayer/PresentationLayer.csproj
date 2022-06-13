@@ -191,6 +191,7 @@
       <DependentUpon>MovieasyDataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\DataAccessLayer.Model.Movie.datasource" />
     <None Include="Properties\DataSources\DataAccessLayer.Model.Projection.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

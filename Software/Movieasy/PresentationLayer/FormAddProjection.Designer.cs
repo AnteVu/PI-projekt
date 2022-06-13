@@ -33,15 +33,17 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
-            this.showDatePicker = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.datePickerFrom = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
+            this.datePickerTo = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBoxTeatres = new System.Windows.Forms.ComboBox();
             this.comboBoxMovies = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.timePickerFrom = new System.Windows.Forms.DateTimePicker();
+            this.timePickerTo = new System.Windows.Forms.DateTimePicker();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +58,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(132, 118);
+            this.label3.Location = new System.Drawing.Point(134, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 13);
             this.label3.TabIndex = 2;
@@ -93,20 +95,12 @@
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
-            // showDatePicker
+            // datePickerFrom
             // 
-            this.showDatePicker.Location = new System.Drawing.Point(135, 134);
-            this.showDatePicker.Name = "showDatePicker";
-            this.showDatePicker.Size = new System.Drawing.Size(121, 20);
-            this.showDatePicker.TabIndex = 17;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(135, 284);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 18;
+            this.datePickerFrom.Location = new System.Drawing.Point(104, 131);
+            this.datePickerFrom.Name = "datePickerFrom";
+            this.datePickerFrom.Size = new System.Drawing.Size(121, 20);
+            this.datePickerFrom.TabIndex = 17;
             // 
             // label7
             // 
@@ -117,12 +111,12 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "Odabir dvorane";
             // 
-            // dateTimePickerTo
+            // datePickerTo
             // 
-            this.dateTimePickerTo.Location = new System.Drawing.Point(135, 178);
-            this.dateTimePickerTo.Name = "dateTimePickerTo";
-            this.dateTimePickerTo.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePickerTo.TabIndex = 20;
+            this.datePickerTo.Location = new System.Drawing.Point(104, 178);
+            this.datePickerTo.Name = "datePickerTo";
+            this.datePickerTo.Size = new System.Drawing.Size(121, 20);
+            this.datePickerTo.TabIndex = 20;
             // 
             // label8
             // 
@@ -168,19 +162,43 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Odabir filma";
             // 
+            // timePickerFrom
+            // 
+            this.timePickerFrom.Location = new System.Drawing.Point(242, 131);
+            this.timePickerFrom.Name = "timePickerFrom";
+            this.timePickerFrom.Size = new System.Drawing.Size(79, 20);
+            this.timePickerFrom.TabIndex = 25;
+            // 
+            // timePickerTo
+            // 
+            this.timePickerTo.Location = new System.Drawing.Point(242, 178);
+            this.timePickerTo.Name = "timePickerTo";
+            this.timePickerTo.Size = new System.Drawing.Size(79, 20);
+            this.timePickerTo.TabIndex = 27;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(139, 284);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 28;
+            // 
             // FormAddProjection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 572);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.timePickerTo);
+            this.Controls.Add(this.timePickerFrom);
             this.Controls.Add(this.comboBoxMovies);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBoxTeatres);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.dateTimePickerTo);
+            this.Controls.Add(this.datePickerTo);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.showDatePicker);
+            this.Controls.Add(this.datePickerFrom);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnCancel);
@@ -202,14 +220,16 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnHelp;
-        private System.Windows.Forms.DateTimePicker showDatePicker;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DateTimePicker datePickerFrom;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePickerTo;
+        private System.Windows.Forms.DateTimePicker datePickerTo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBoxTeatres;
         private System.Windows.Forms.ComboBox comboBoxMovies;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker timePickerFrom;
+        private System.Windows.Forms.DateTimePicker timePickerTo;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

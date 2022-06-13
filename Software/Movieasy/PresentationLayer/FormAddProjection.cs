@@ -28,8 +28,10 @@ namespace PresentationLayer
             Movie selectedMovie = comboBoxMovies.SelectedItem as Movie;
             Teatre selectedTeatre = comboBoxTeatres.SelectedItem as Teatre;
             Hall selectedHall = comboBox2.SelectedItem as Hall;
-            Projection projection = new Projection(selectedMovie, selectedTeatre, selectedHall);
-            var newProjections = _unitOfWork.Projections.Add(projection);
+            DateTime timeFrom = datePickerFrom.Value.Date + timePickerFrom.Value.TimeOfDay;
+            DateTime timeTo = datePickerTo.Value.Date + timePickerTo.Value.TimeOfDay;
+            Projection projection = new Projection(timeFrom, timeTo, selectedMovie, selectedTeatre, selectedHall);
+            var newProjection = _unitOfWork.Projections.Add(projection);
             _unitOfWork.Complete();
             Close();
         }
@@ -54,6 +56,12 @@ namespace PresentationLayer
 
         private void FormAdd_Load(object sender, EventArgs e)
         {
+            timePickerFrom.Format = DateTimePickerFormat.Time;
+            timePickerFrom.ShowUpDown = true;
+
+            timePickerTo.Format = DateTimePickerFormat.Time;
+            timePickerTo.ShowUpDown = true;
+
             RefreshForm();
         }
 

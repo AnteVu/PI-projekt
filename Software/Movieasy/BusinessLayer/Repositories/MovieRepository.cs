@@ -1,10 +1,10 @@
 ﻿using DataAccessLayer.Model;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace BusinessLayer.Repositories
 {
@@ -16,9 +16,9 @@ namespace BusinessLayer.Repositories
             _dbContext = _appDbContext;
         }
 
-        public List<Movie> GetMovies()
+        public List<Movie> GetAllMovies()
         {
-            return _dbContext.Movies.ToList();
+            return _dbContext.Movies.Include(x => x.Projections).Include(y => y.Genre).ToList();
         }
 
     }

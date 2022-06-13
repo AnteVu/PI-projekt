@@ -27,14 +27,27 @@ namespace DataAccessLayer.Model
         }
 
         [NotMapped]
-        public DateTime LastShowed
+        public DateTime? LastShowed
         {
             get
             {
                 List<Projection> projections = Projections.Where(x => x.TimeTo < DateTime.Now).ToList();
 
-                return projections.Max(x => x.TimeTo);
+                if (projections.Count > 0) 
+                {
+                    return projections.Max(x => x.TimeTo);
+                }
+
+                return null;
             }
+        }
+
+        [NotMapped]
+        public string GenreName { 
+            get 
+            {
+                return Genre.Name;
+            } 
         }
 
         public Movie()

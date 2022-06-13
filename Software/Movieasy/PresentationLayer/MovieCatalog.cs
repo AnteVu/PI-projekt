@@ -1,5 +1,6 @@
 ﻿using BusinessLayer;
 using BusinessLayer.Services;
+using DataAccessLayer.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace PresentationLayer
     public partial class MovieCatalog : Form
     {
         private readonly UnitOfWork _unitOfWork;
+        List<Projection> Projections;
+        List<Projection> FilteredProjections;
         public MovieCatalog()
         {
             _unitOfWork = new UnitOfWork(new AppDbContext());
@@ -30,8 +33,11 @@ namespace PresentationLayer
 
         private void RefreshForm()
         {
+            Projections = _unitOfWork.Projections.GetAllProjections();
+            FilteredProjections = Projections;
+
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = _unitOfWork.Projections.GetAll();
+            dataGridView1.DataSource = FilteredProjections;
         }
 
         private void btnDetalj_Click(object sender, EventArgs e)
@@ -82,6 +88,22 @@ namespace PresentationLayer
             FormAddProjection formAddProjection = new FormAddProjection();
             Hide();
             formAddProjection.ShowDialog();
+        }
+
+        private void btnPregledFilmova_Click(object sender, EventArgs e)
+        {
+            FormMovieList movieList = new FormMovieList();
+            Hide();
+            movieList.ShowDialog();
+            Show();
+        }
+
+        private void dateTimePickerFilter_ValueChanged(object sender, EventArgs e)
+        {
+            FilteredProjections = Projections.Where(x => x.TimeFrom.Date >= dateTimePickerFilter.Value.Date).ToList();
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = FilteredProjections;
         }
     }
     
